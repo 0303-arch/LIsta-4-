@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: lightgray;
+        }
+        form {
+            background: white;
+            padding: 10px;
+            border: 2px solid black;
+            width: 300px;
+        }
+        input, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Atividade Física</h2>
+    <form>
+        Nome: <input type="text" name="nome">
+        <p>Escolha sua atividade:</p>
+        <label for="caminhada">Caminhada</label>
+        <input type="radio" id="caminhada" name="atividade" value="Caminhada">
+        
+        <label for="corrida">Corrida</label>
+        <input type="radio" id="corrida" name="atividade" value="Corrida">
+        
+        <label for="natacao">Natação</label>
+        <input type="radio" id="natacao" name="atividade" value="Natação">
+        
+        <label for="danca">Dança</label>
+        <input type="radio" id="danca" name="atividade" value="Dança">
+        
+        Comentário: <textarea name="comentario"></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+    <p>Cuide da sua saúde!</p>
+</body>
+</html>
